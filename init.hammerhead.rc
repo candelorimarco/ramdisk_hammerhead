@@ -393,7 +393,7 @@ service time_daemon /system/bin/time_daemon
 
 
 service supolicy /system/xbin/supolicy --live \
-        "allow mediaserver mediaserver_tmpfs file execute"
+        "allow mediaserver mediaserver_tmpfs file { read write execute }"
      disabled
      oneshot
 
